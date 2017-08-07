@@ -80,7 +80,7 @@ if (config.debug) {
     app.use(expressWinston.logger({
         transports: [
             new winston.transports.File({
-                level: 'info',
+                level: 'error',//changed from info
                 filename: './logs/logs.log',
                 handleExceptions: true,
                 json: true,
@@ -89,7 +89,7 @@ if (config.debug) {
                 colorize: false
             }),
             new winston.transports.Console({
-                level: 'debug',
+                level: 'error',//changed from debug
                 handleExceptions: true,
                 json: true,
                 colorize: true
