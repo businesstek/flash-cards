@@ -5,7 +5,7 @@ module.exports = {
     "serverURL": "http://localhost:8091/",
     "serverDomain": "localhost",
     "environment": "development",
-    "debug": true,
-    "dbDebug": true,
+    "debug": false, //changed from true
+    "dbDebug": true, //changed from true
     "defaultSettings": {}
 };
